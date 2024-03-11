@@ -6,19 +6,6 @@
   border-radius: var(--element-border-raduis);
 }
 
-.search-bar-holder {
-  position: fixed;
-  top: 0rem;
-  padding: 1rem 1rem;
-  background-color: rgba(247, 250, 255, 0.4);
-  z-index: -1;
-  backdrop-filter: blur(8px);
-  display: flex;
-  left: 0px;
-  right: 0px;
-  justify-content: center;
-}
-
 .search-bar button img {
   width: 1.1rem;
   height: 1.1rem;
@@ -36,15 +23,6 @@
 
 @media (max-width: 902px) {
   .search-bar {
-    margin-top: 0rem;
-  }
-
-  .search-bar-holder {
-    position: sticky;
-    top: 0rem;
-    padding: 1rem 0rem;
-    background-color: rgba(247, 250, 255, 0.4);
-    z-index: 88;
-    backdrop-filter: blur(8px);
+    margin-top: 0.8rem;
   }
 }
