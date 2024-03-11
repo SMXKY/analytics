@@ -41,6 +41,10 @@
   color: var(--call-to-action);
 }
 
+#most-recent-graph {
+  display: none;
+}
+
 @media (max-width: 408px) {
   .activity-most-recent-graph-header {
     font-size: 0.8rem;

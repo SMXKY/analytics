@@ -214,8 +214,91 @@
           </button>
         </div>
       </div>
+
+      <div class="dashboard-graphs">
+        <canvas id="activity-graph"></canvas>
+        <canvas id="most-recent-graph"></canvas>
+      </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts/main.js" type="module"></script>
+
+    <script>
+      const ctx = document.getElementById("activity-graph");
+
+      const labels = ["mon", "Tue", "Wen", "Thu", "Fri", "Sat", "Sun"].map(
+        (el) => {
+          let word = el.split("");
+          let newWord = [];
+          if (word.length > 6) {
+            newWord = word.slice(0, 6);
+            return `${newWord.join("")}...`;
+          } else {
+            return word.join("");
+          }
+        }
+      );
+
+      const myBarChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: "activity",
+              data: [15, 10, 0, 12, 8, 11, 18],
+              borderWidth: 0,
+              color: "none",
+              barThickness: 18,
+              backgroundColor: "rgb(50, 70, 211)",
+              hoverBackgroundColor: "rgba(50, 70, 211,0.8)",
+              borderRadius: 3,
+              borderSkipped: "start",
+            },
+
+            {
+              label: "Max activity",
+              data: [20, 20, 20, 20, 20, 20],
+              borderWidth: 0,
+              color: "none",
+              barThickness: 18,
+              backgroundColor: "rgb(167, 196, 255)",
+              hoverBackgroundColor: "rgb(167, 196, 255)",
+              borderRadius: 3,
+              borderSkipped: "start",
+            },
+          ],
+        },
+        responsive: false,
+        options: {
+          plugins: {
+            title: {
+              display: false,
+              text: "",
+            },
+          },
+          interaction: {
+            intersect: true,
+          },
+          scales: {
+            x: {
+              stacked: true,
+              grid: {
+                drawOnChartArea: false,
+              },
+            },
+
+            y: {
+              beginAtZero: true,
+              //stacked: true,
+              grid: {
+                drawOnChartArea: false,
+              },
+            },
+          },
+        },
+      });
+    </script>
   </body>
 </html>
