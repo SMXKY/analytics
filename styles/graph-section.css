@@ -1,0 +1,62 @@
+.acitivity-most-recent-graph {
+  background-color: white;
+  border-radius: var(--element-border-raduis);
+  margin-top: 1rem;
+  padding: 1.5rem;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-most-recent-graph-header {
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.toggle-graphs-btns {
+  background-color: var(--profile-bar-background);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.toggle-btn {
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 0.6rem;
+  transition: 0.5s;
+}
+
+.toggle-btn-off {
+  background: none;
+  color: var(--widget-descriptio-color);
+}
+
+.toggle-btn-on {
+  background-color: white;
+  color: var(--call-to-action);
+}
+
+@media (max-width: 408px) {
+  .activity-most-recent-graph-header {
+    font-size: 0.8rem;
+  }
+
+  .acitivity-most-recent-graph {
+    padding: 1rem;
+  }
+
+  .toggle-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.5rem;
+    transition: 0.5s;
+  }
+
+  .toggle-graphs-btns {
+    padding: 0.4rem;
+  }
+}
