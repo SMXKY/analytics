@@ -11,7 +11,7 @@
   --element-border-raduis: 0.5rem;
   --widget-descriptio-color: rgb(185, 185, 185);
   --regular-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-  --graph-back-ground: #a7c4ff;
+  --graph-back-ground: rgb(167, 196, 255);
 }
 
 * {
@@ -28,16 +28,16 @@ img {
 
 body {
   background-color: var(--page-backgroud);
-  padding: 1rem 21rem 8rem 21rem;
+  padding: 1rem 21rem 80rem 21rem;
 }
 @media (max-width: 1254px) {
   body {
-    padding: 1rem 1rem 8rem 21rem;
+    padding: 1rem 1rem 80rem 21rem;
   }
 }
 @media (max-width: 902px) {
   body {
-    padding: 1rem;
+    padding: 1rem 1rem 80rem 1rem;
   }
 }
 
