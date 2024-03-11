@@ -1,0 +1,134 @@
+.nav-bar {
+  background-color: var(--nav-bar-color);
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 20rem;
+  padding: 2rem 0rem 2rem 2rem;
+}
+
+.nav-bar-element-specific img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.nav-heading {
+  font-size: 1.4rem;
+}
+
+.nav-bar-elements {
+  margin-top: 2rem;
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.nav-bar-element-specific {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-bar-element-specific p {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--sub-text-color);
+}
+
+.on-nav-bar-element {
+  width: 0.5rem;
+  height: 1.5rem;
+  background-color: var(--call-to-action);
+  position: absolute;
+  right: 0.5rem;
+  border-radius: 1rem;
+}
+
+.off-side-bar-elements {
+  display: none;
+}
+
+.nav-bar-element-specific:hover .on-nav-bar-element {
+  display: block;
+  background-color: var(--call-to-action-fade);
+}
+
+.nav-bar-element-specific:hover,
+.close-side-bar-btn:hover {
+  opacity: 0.8;
+}
+
+.close-side-bar-btn {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.close-side-bar-btn img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.profile-section {
+  display: none;
+}
+
+.pull-up-side-bar {
+  display: block;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width: 19rem;
+  padding: 2rem 0rem 2rem 2rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.pull-up-side-bar {
+  left: -20rem;
+}
+
+.open-nav-bar-btn img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 1254px) {
+  .profile-bar {
+    display: none;
+  }
+
+  .profile-section {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .user-organization-profile-img {
+    margin-left: 0px;
+    margin-right: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .user-organization-details {
+    align-items: start;
+  }
+
+  .user-organization-name {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 902px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .show-side-bar {
+    left: 0px;
+  }
+}

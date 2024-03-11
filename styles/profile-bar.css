@@ -1,0 +1,75 @@
+.profile-bar {
+  width: 20rem;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: var(--profile-bar-background);
+  padding: 2rem 2rem 2rem 0rem;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.user-organization-details {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.user-organization-profile-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-left: 0.8rem;
+}
+
+.edit-profile-btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.8rem;
+}
+
+.user-organization-profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-organization-name {
+  color: var(--heading-color);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.user-or-organization-check {
+  color: var(--sub-important-text);
+  font-size: 0.8rem;
+}
+
+.profile-btn-bar {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.profile-btn-bar:hover {
+  opacity: 0.8;
+}
+
+.edit-profile-btn {
+  display: flex;
+  align-items: center;
+}
+
+.edit-profile-btn p {
+  font-weight: 600;
+  color: var(--user-name-color);
+}
+
+.logout-btn {
+  margin-top: 0rem;
+  color: var(--heading-color);
+  font-weight: 500;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,45 @@
+:root {
+  --page-backgroud: rgb(247, 250, 255);
+  --nav-bar-color: rgb(255, 255, 255);
+  --heading-color: rgb(17, 24, 71);
+  --sub-text-color: rgb(116, 114, 117);
+  --call-to-action: rgb(50, 70, 211);
+  --call-to-action-fade: rgba(50, 70, 211, 0.3);
+  --profile-bar-background: rgb(242, 246, 254);
+  --user-name-color: rgb(83, 92, 143);
+  --sub-important-text: rgb(190, 196, 218);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: 0.15s ease-in-out;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+img {
+  object-fit: cover;
+}
+
+body {
+  background-color: var(--page-backgroud);
+}
+
+@media (max-width: 902px) {
+  body {
+    padding: 1rem;
+  }
+}
+
+/*General styles*/
+.heading {
+  color: var(--heading-color);
+  font-weight: 800;
+}
+
+.button-no-background {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
