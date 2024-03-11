@@ -8,6 +8,7 @@
   --profile-bar-background: rgb(242, 246, 254);
   --user-name-color: rgb(83, 92, 143);
   --sub-important-text: rgb(190, 196, 218);
+  --element-border-raduis: 0.4rem;
 }
 
 * {
@@ -24,8 +25,13 @@ img {
 
 body {
   background-color: var(--page-backgroud);
+  padding: 1rem 21rem 8rem 21rem;
 }
-
+@media (max-width: 1254px) {
+  body {
+    padding: 1rem 1rem 8rem 21rem;
+  }
+}
 @media (max-width: 902px) {
   body {
     padding: 1rem;

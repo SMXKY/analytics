@@ -97,6 +97,10 @@
   height: 2rem;
 }
 
+.open-nav-bar-btn {
+  display: none;
+}
+
 @media (max-width: 1254px) {
   .profile-bar {
     display: none;
@@ -130,5 +134,9 @@
 
   .show-side-bar {
     left: 0px;
+  }
+
+  .open-nav-bar-btn {
+    display: block;
   }
 }
